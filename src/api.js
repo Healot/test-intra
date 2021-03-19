@@ -27,10 +27,10 @@ class Api {
         return this.request(`${this.prefix}/Priorities`)
     }
     
-    // http://intravision-task.test01.intravision.ru/odata/tasks?tenantguid=f06e33d8-5eb0-4182-85df-f3e790ff0328
     getTasks() {
         return this.request(`${Api.HOST}/odata/tasks/?tenantguid=${this.token}`);
     }
+    
     getTask(id) {
         return this.request(`${this.prefix}/Tasks/${id}`);
     }
