@@ -11,7 +11,7 @@ export function Modal(props) {
             <div className={active ? "modal active" : "modal"} onClick={() => setActive(false)}>  
             {props.children}
             </div>
-            <button onClick={(e) => setActive(prev => !prev)}>Open modal</button>
+            <button onClick={(e) => setActive(prev => !prev)}>Add New Task</button>
         </div>
     )
 }
